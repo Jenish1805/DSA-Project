@@ -29,8 +29,8 @@ public:
         adjList.resize(n);
     }
 
-    void addEdge(int u,int v,double distance,double traffic){
-        Edge e(v,distance,traffic);
+    void addEdge(int u,int v,double dist,double traf){
+        Edge e(v, dist, traf);
         adjList[u].push_back(e);
     }
 
@@ -97,6 +97,10 @@ public:
             w1=w1-(alpha*(2.0/n)*dw1);
             w2=w2-(alpha*(2.0/n)*dw2);
             b=b-(alpha*(2.0/n)*db);
+
+            if(it % 3000 == 0){
+                cout<<"Iteration "<<it<<" | w1: "<<w1<<" w2: "<<w2<<" b: "<<b<<endl;
+            }
         }
     }
 
@@ -140,7 +144,9 @@ vector<int> dijkstra(Graph &g,int source,int dest){
     }
 
     vector<int> path;
-    if(dist[dest]==1e9)return path;
+    if(dist[dest]==1e9){
+        return path;
+    }
 
     stack<int> st;
     int x=dest;
@@ -222,13 +228,15 @@ int main(){
     vector<double>y={7,18,7.5,20,8,14,13.5,6.5,22,4};
 
     LinReg lr;
-    lr.init(0.001,1000);
+    lr.init(0.001,30000);
     lr.train(d,t,y);
 
     for(int u=0;u<g.numNodes;u++){
         for(int i=0;i<g.adjList[u].size();i++){
-            double p=lr.predict(g.adjList[u][i].dist,g.adjList[u][i].traf);
-            if(p<1)p=1;
+            double p = lr.predict(g.adjList[u][i].dist, g.adjList[u][i].traf);
+            if(p<1){
+                p=1;
+            }
             g.adjList[u][i].predWt=p;
         }
     }

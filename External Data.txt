@@ -1,0 +1,63 @@
+External Data for lin reg for different values of alpha and epochs(iterations)
+
+a= 0.001 it =1000
+Iteration 0 | w1: 0.230774 w2: 0.113706 b: 0.023006
+Iteration 100 | w1: 2.33398 w2: 0.451435 b: 0.357156
+Iteration 200 | w1: 2.33386 w2: 0.59015 b: 0.31524
+Iteration 300 | w1: 2.3285 w2: 0.727219 b: 0.273284
+Iteration 400 | w1: 2.32308 w2: 0.863141 b: 0.232197
+Iteration 500 | w1: 2.31761 w2: 0.997924 b: 0.191964
+Iteration 600 | w1: 2.3121 w2: 1.13158 b: 0.152567
+Iteration 700 | w1: 2.30655 w2: 1.26412 b: 0.113989
+Iteration 800 | w1: 2.30095 w2: 1.39555 b: 0.0762118
+Iteration 900 | w1: 2.29532 w2: 1.52587 b: 0.03922
+
+a=0.01 it = 1000
+Iteration 0 | w1: 1.40774 w2: 0.237062 b: 0.23006
+Iteration 100 | w1: 2.28916 w2: 1.66718 b: -0.000567714
+Iteration 200 | w1: 2.23096 w2: 2.90109 b: -0.323441
+Iteration 300 | w1: 2.17112 w2: 4.03566 b: -0.584999
+Iteration 400 | w1: 2.11094 w2: 5.07899 b: -0.796808
+Iteration 500 | w1: 2.05141 w2: 6.03847 b: -0.96826
+Iteration 600 | w1: 1.99327 w2: 6.92091 b: -1.10698
+Iteration 700 | w1: 1.93703 w2: 7.73253 b: -1.21915
+Iteration 800 | w1: 1.88305 w2: 8.47905 b: -1.3098
+Iteration 900 | w1: 1.83158 w2: 9.16573 b: -1.38301
+
+a=0.01 it = 5000
+Iteration 0 | w1: 1.40774 w2: 0.237062 b: 0.23006
+Iteration 500 | w1: 2.05141 w2: 6.03847 b: -0.96826
+Iteration 1000 | w1: 1.78275 w2: 9.79739 b: -1.44208
+Iteration 1500 | w1: 1.57878 w2: 12.2733 b: -1.60352
+Iteration 2000 | w1: 1.43479 w2: 13.9052 b: -1.65658
+Iteration 2500 | w1: 1.33647 w2: 14.9812 b: -1.67269
+Iteration 3000 | w1: 1.27043 w2: 15.6907 b: -1.67664
+Iteration 3500 | w1: 1.22646 w2: 16.1586 b: -1.67688
+Iteration 4000 | w1: 1.19731 w2: 16.4672 b: -1.6762
+Iteration 4500 | w1: 1.17803 w2: 16.6708 b: -1.67546 divergence seen here??
+
+a=0.001 it = 5000
+Iteration 0 | w1: 0.230774 w2: 0.113706 b: 0.023006
+Iteration 500 | w1: 2.31761 w2: 0.997924 b: 0.191964
+Iteration 1000 | w1: 2.28966 w2: 1.65511 b: 0.00299719
+Iteration 1500 | w1: 2.26087 w2: 2.28528 b: -0.167128
+Iteration 2000 | w1: 2.23148 w2: 2.88954 b: -0.320277
+Iteration 2500 | w1: 2.20168 w2: 3.46898 b: -0.458133
+Iteration 3000 | w1: 2.17166 w2: 4.02464 b: -0.582212
+Iteration 3500 | w1: 2.14155 w2: 4.55748 b: -0.69388
+Iteration 4000 | w1: 2.11149 w2: 5.06847 b: -0.79437
+Iteration 4500 | w1: 2.0816 w2: 5.55851 b: -0.884789
+
+a=0.001 it = 50000
+Iteration 0 | w1: 0.230774 w2: 0.113706 b: 0.023006
+Iteration 5000 | w1: 2.05198 w2: 6.02845 b: -0.966138
+Iteration 10000 | w1: 1.7833 w2: 9.78966 b: -1.44109
+Iteration 15000 | w1: 1.57926 w2: 12.2675 b: -1.60309
+Iteration 20000 | w1: 1.43517 w2: 13.9009 b: -1.65641
+Iteration 25000 | w1: 1.33675 w2: 14.978 b: -1.67263
+Iteration 30000 | w1: 1.27065 w2: 15.6884 b: -1.67662
+Iteration 35000 | w1: 1.22661 w2: 16.1569 b: -1.67688
+Iteration 40000 | w1: 1.19742 w2: 16.466 b: -1.6762
+Iteration 45000 | w1: 1.17811 w2: 16.6699 b: -1.67546	
+
+conc: small change in values, thus the descent is converging and thus iter = 30000 and a = 0.001(small) gives almost accurate results
