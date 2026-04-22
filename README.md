@@ -3,7 +3,7 @@
 ## Team
 * Jenish Pancholi (IU2441230510)
 * Jainesh Patel (IU2441230479)
-* Nandan Khagram (IU2441230558)
+* Nandan Khagram (IU2441230559)
 
 ## Problem Statement
 In real-world navigation, the shortest path is not always the fastest. Traffic conditions affect travel time, but basic algorithms often ignore this. This project improves pathfinding by combining graph algorithms with a simple machine learning model.
